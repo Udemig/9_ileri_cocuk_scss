@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 27px 17px;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  .logo {
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 700;
+    span {
+      color: var(--main-color);
+    }
+  }
+}
+.navbar {
+  display: flex;
+  a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all 0.5 ease;
+    // &: yapısı içerisinde yer alınan kısıma denk gelir.
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  a:first-child {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+  }
+  a {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all 0.5 ease;
+    &:hover {
+      color: var(--main-color);
+      transform: translateY(-3px);
+      // elemanları ötelemek istersek bunu  transform: translate ile yapabiliriz.Bu özellik elemanları x ve ye ekseninde ötelemeye yarar.x ekseninde sağa öteleme + değer ile yapılırken sola öteleme - değer vererek yapılır. y ekseninde ise + değer aşşağı - değer yukarı öteleme yapacaktır.
+    }
+  }
+}
